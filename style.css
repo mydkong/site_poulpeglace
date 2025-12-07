@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.edition-mode {
+        display: block
+}
+
+.showing-mode {
+        display: none
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5
+}
+
+.edition-mode .actions-bar {
+        display: flex;
+        align-items: center;
+        color: #424242
+}
+
+.edition-mode .actions-bar:nth-child(1) {
+        padding-left: 22px
+}
+
+.edition-mode .actions-bar p {
+        cursor: pointer;
+        margin: 0;
+        padding: 16px;
+        padding-left: 11px;
+        padding-right: 11px
+}
+
+* {
+        font-family: Inter, sans-serif
+}
+
+.diapo img {
+        border-radius: 5px;
+        outline: 1px #d2d2ce solid;
+        height: 100px;
+        width: 200px;
+        background: #fff;
+        cursor: pointer
+}
+
+.diapo img:hover {
+        outline: 2px #777777 solid
+}
+
+.diapo img.selected {
+        outline: 3px #c43e1c solid
+}
+
+.diapo img.selected:hover {
+        outline: 4px #c43e1c solid
+}
+
+.diapo {
+    display: flex;
+    justify-content: center;
+        gap: 5px;
+        padding-left: 15px;
+        padding-right: 15px
+}
+
+.diapo:first-of-type {
+        padding-top: 20px
+}
+
+.diapo:last-of-type {
+        padding-bottom: 20px
+}
+
+.diapositives-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px;
+        height: calc(100vh - 65px);
+        overflow-y: auto;
+        width: fit-content;
+        padding-right: 10px;
+        border-right: 2px #d2d5d8 solid
+}
+
+.diapo p.iteration {
+        margin: 0;
+        margin-right: 5px;
+        color: #3f3f3d
+}
+
+div.selection-line {
+        background: #c7c7c7;
+        height: 2px;
+        transition: .5s ease;
+        position: absolute;
+        top: 46.5px;
+        left: 0;
+        cursor: pointer
+}
+
+div.selection-line.hover {
+        background: #0000
+}
+
+div.body {
+        display: flex
+}
+
+div.actual-slide img {
+        height: 65vh
+}
+
+div.actual-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1
+}
+
+div.context-menu {
+        display: none;
+        position: absolute;
+        background: #fff;
+        box-shadow: 0 0 5px #3f3f3d;
+        border-radius: 5px;
+        padding: 10px
+}
+
+div.context-menu div {
+        margin: 0;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px
+}
+
+div.context-menu div:hover {
+        background: #f5f5f5
+}
+
+div.context-menu div svg {
+        width: 50px;
+        height: auto
+}
+
+div.context-menu div:first-of-type svg {
+        width: 44px
