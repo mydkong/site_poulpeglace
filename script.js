@@ -95,3 +95,5 @@ imgOnChange({
 })
 
 document.querySelector('.context-menu .duplicate').addEventListener('click', e => {
+    diapoCtxMenu.cloneNode(true)
+})
